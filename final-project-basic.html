@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      background: linear-gradient(
+        109.6deg,
+        rgb(20, 30, 48) 11.2%,
+        rgb(36, 59, 85) 91.1%
+      );
+    }
+    h1 {
+      margin: 5px 20px auto;
+      font-size: 60px;
+      color: #2893c1;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2 {
+      color: ivory;
+      font-size: 20px;
+      font-weight: lighter;
+    }
+    ul {
+      display: inline;
+      list-style: none;
+      padding: 90px;
+      text-align: center;
+      padding-inline-start: 0px;
+    }
+    li {
+      display: inline;
+      margin: 50px 0 auto;
+    }
+    .star-map {
+      margin-right: 100px;
+      padding: 80px;
+    }
+    .art {
+      margin-left: 100px;
+      padding: 80px;
+    }
+    .events {
+      margin: 20px auto;
+      padding: 150px;
+    }
+    a {
+      text-decoration: none;
+      color: #a3e3ff;
+      font-style: italic;
+    }
+    a:hover {
+      transition: all 200ms ease-in-out;
+      opacity: 0.9;
+    }
+    p {
+      color: ivory;
+      line-height: 25px;
+      font-family: monospace;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid white;
+      border-radius: 12px 30px;
+      width: 600px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 10px;
+      background: transparent;
+      color: aliceblue;
+      font-size: 15px;
+      border: 2px solid #a3e3ff;
+      border-radius: 40px;
+      box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.3);
+    }
+    button:hover {
+      transition: all 400ms ease-in-out;
+      background-color: rgb(163, 227, 255);
+      color: rgb(36, 59, 85);
+      padding: 12px 15px;
+      cursor: pointer;
+    }
+    div {
+      color: white;
+      font-family: monospace;
+      font-size: 15px;
+    }
+    span {
+      color: ivory;
+      font-style: italic;
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <h1><strong>Night Sky</strong></h1>
+    <h2>
+      “I have loved the stars too fondly to be fearful of the night.” ~Sarah
+      Williams
+    </h2>
+    <hr />
+    <ul>
+      <li class="star-map">
+        <a href="https://stellarium-web.org/" target="_blank"
+          >Stellarium Star Map</a
+        >
+      </li>
+      <li class="events">
+        <a href="https://in-the-sky.org/location.php" target="_blank"
+          >Tonight events</a
+        >
+      </li>
+      <li class="art">
+        <a
+          href="https://fineartamerica.com/art/paintings/night+sky"
+          target="_blank"
+          >Night art</a
+        >
+      </li>
+    </ul>
+    <hr />
+    <p>
+      <em>
+        Night sky captivates me. A vast stretch of canvas smeared with dark
+        colors with soft clouds and twinkling dots of stars. Looking at the sky
+        does not only fascinates one, but also brings a sense of humility. How
+        tiny we are under this enormous sky. Yet how lucky we are to able to
+        witness this dark beauty. We can only look up in wonderment and be
+        grateful to be blessed with eyes that could capture its beauty every
+        night.
+      </em>
+    </p>
+    <img
+      src="https://images.immediate.co.uk/production/volatile/sites/25/2021/01/GettyImages-162886773-20e8a87.jpg?quality=90&webp=true&resize=1200,800"
+      alt="girl looking at stars"
+    />
+    <button>🔭 <em>Click Me</em></button>
+    <div>
+      Scribbled by
+      <span
+        ><a href="https://www.linkedin.com/in/aish007/" target="_blank">
+          Aishwarya</a
+        ></span
+      >
+    </div>
+    <script>
+      function askInterest() {
+        let name = prompt("Hello! What is your name?");
+        let ans = prompt("Do you like night skies too (Yes or No) ?");
+        ans = ans.toLowerCase().trim();
+        if (ans === "yes") {
+          alert(`Wow, ${name}! We can be friends!`);
+        } else {
+          alert(`Too bad 🙁 Night skies are pretty. `);
+        }
+      }
+      let clickMe = document.querySelector("button");
+      clickMe.addEventListener("click", askInterest);
+    </script>
+  </body>
+</html>
